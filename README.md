@@ -5,6 +5,6 @@
 <p>I used only HTML, CSS and JS technologies in this project. The design figma was coded from the community section..</p>
 
 <h3>View and browse the design freely with the demo.</h3>
-<p>I will share the demo link to see the design and browse comfortably. <a href="https://lugar-landing-page.netlify.app/" target="_blank">You can click me to see the demo.</a></p>
+<p>I will share the demo link to see the design and browse comfortably. <a href="https://pomodoro-cemtatli.vercel.app/" target="_blank">You can click me to see the demo.</a></p>
 
 <img src="https://i.hizliresim.com/rb4v16z.png">

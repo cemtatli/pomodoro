@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+button,
+input {
+  font-family: inherit;
+  outline: none;
+}
+:root {
+  --pomodoro: #ffd9d9;
+  --shortBreak: #d9fae1;
+  --longBreak: #d9eeff;
+  --timer: #1a1a1a;
+}
+
+@mixin button-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1.05;
+  font-size: 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: 300ms color, 300ms border;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+html {
+  font-family: "Albert Sans", sans-serif !important;
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--pomodoro);
+  transition: background-color 1.5s;
+  user-select: none;
+
+  progress {
+    border-radius: 10px;
+    width: 100%;
+    height: 1.5rem;
+    position: fixed;
+    top: 0;
+  }
+  progress::-webkit-progress-bar {
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+  progress::-webkit-progress-value {
+    background-color: #fff;
+  }
+  .timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 1.25rem;
+    text-align: center;
+  }
+  .buttons {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+    button[data-mode="pomodoro"] {
+      @include button-style;
+      position: relative;
+      background: rgba(255, 76, 76, 0.5);
+      border: 2px solid #471515;
+      &:hover {
+        color: #471515;
+        border: 2px solid #fff;
+      }
+    }
+    button[data-mode="shortBreak"] {
+      @include button-style;
+      position: relative;
+      background: rgba(77, 218, 110, 0.5);
+      border: 2px solid #14401d;
+
+      &:hover {
+        color: #14401d;
+        border: 2px solid #fff;
+      }
+    }
+    button[data-mode="longBreak"] {
+      @include button-style;
+      position: relative;
+      background: rgba(76, 172, 255, 0.5);
+      border: 2px solid #153047;
+      &:hover {
+        color: #153047;
+        border: 2px solid #fff;
+      }
+    }
+  }
+  .clock {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 12rem;
+    font-weight: 700;
+    color: var(--timer);
+    margin-bottom: 1rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    min-width: 500px;
+  }
+  .main-button {
+    cursor: pointer;
+    box-shadow: rgb(1, 1, 1) 0px 6px 0px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--timer);
+    font-weight: bold;
+    background-color: #fff;
+    border-width: initial;
+    border-style: none;
+    margin: 1.5rem 0px 0px;
+    padding: 1rem 1.5rem;
+    border-radius: 999px;
+    transition: color 0.5s ease-in-out;
+  }
+  .main-button.active {
+    transform: translateY(6px);
+    box-shadow: none;
+    outline: none;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+  }
+  .clock {
+    font-size: 8rem !important;
+    min-width: fit-content !important;
+  }
+  .main-button {
+    font-size: 1rem;
+    padding: 1rem !important;
+  }
+}

@@ -3,6 +3,7 @@ import ReactSlider from "react-slider";
 import SettingsContext from "../SettingsContext";
 import { useContext } from "react";
 import BackButton from "../BackButton";
+import UserButton from "../UserButton";
 
 export default function Settings() {
   const SettingsInfo = useContext(SettingsContext);
@@ -41,11 +42,14 @@ export default function Settings() {
           }}
         />
       </div>
-      <BackButton
-        onClick={() => {
-          SettingsInfo.setShowSettings(false);
-        }}
-      />
+      <div className="flex items-center justify-center gap-4 p-2 px-6 bg-white shadow-lg rounded-full  border-zinc-500">
+        <BackButton
+          onClick={() => {
+            SettingsInfo.setShowSettings(false);
+          }}
+        />
+        <UserButton />
+      </div>
     </div>
   );
 }

@@ -77,7 +77,7 @@ function Timer() {
           trailColor: "transparent",
         })}
       />
-      <div className="flex items-center justify-center gap-4 p-2 bg-white shadow-lg rounded-full w-40 border-zinc-500">
+      <div className="flex items-center justify-center gap-4 p-2 px-6 bg-white shadow-lg rounded-full  border-zinc-500">
         {isPaused ? (
           <PlayButton
             onClick={() => {

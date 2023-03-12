@@ -36,7 +36,7 @@ function Timer() {
 
       setSecondsLeft(nextSeconds);
       secondsLeftRef.current = nextSeconds;
-    } // switchMode
+    }
 
     secondsLeftRef.current = settingsInfo.workMinutes * 60;
     setSecondsLeft(secondsLeftRef.current);
@@ -66,7 +66,7 @@ function Timer() {
   return (
     <>
       <CircularProgressbar
-        strokeWidth={5}
+        strokeWidth={4}
         className="max-w-xs w-full"
         value={percentage}
         text={minutes + ":" + seconds}
@@ -74,10 +74,11 @@ function Timer() {
           textColor: mode === "work" ? red : green,
           pathColor: mode === "work" ? red : green,
           textSize: "1.5rem",
-          trailColor: "transparent",
+          trailColor: "#e5e5e5",
         })}
       />
-      <div className="flex items-center justify-center gap-4 p-2 px-6 bg-white shadow-lg rounded-full  border-zinc-500">
+
+      <div className="flex items-center justify-center gap-4 p-2 px-6 bg-white shadow-lg rounded-full border-zinc-500 ">
         {isPaused ? (
           <PlayButton
             onClick={() => {

@@ -5,9 +5,8 @@ import { useState } from "react";
 
 function App() {
   const [showSettings, setShowSettings] = useState(false);
-  const [workMinutes, setWorkMinutes] = useState(30);
-  const [breakMinutes, setBreakMinutes] = useState(5);
-
+  const [workMinutes, setWorkMinutes] = useState(25); // Başlangıç değeri olarak 25 dakika çalışma süresi verildi.
+  const [breakMinutes, setBreakMinutes] = useState(5); // Başlangıç değeri olarak 5 dakika ara verildi.
   return (
     <main>
       <SettingsContext.Provider

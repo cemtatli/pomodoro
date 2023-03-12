@@ -6,9 +6,9 @@ export default function BackButton(props) {
     <>
       <button
         {...props}
-        className="p-2 bg-white rounded-full flex items-center justify-center cursor-pointer shadow-lg"
+        className="w-12 h-12 bg-white rounded-full flex items-center justify-center cursor-pointer shadow-lg border-zinc-500 hover:bg-zinc-50 hover:shadow-none transition duration-200 ease-in-out"
       >
-        <Backward size="32" color="#697689" variant="TwoTone" />
+        <Backward size="24" color="#e74c3c" variant="TwoTone" />
       </button>
     </>
   );

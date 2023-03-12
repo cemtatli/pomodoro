@@ -66,15 +66,18 @@ function Timer() {
   return (
     <>
       <CircularProgressbar
+        strokeWidth={5}
+        className="max-w-xs w-full"
         value={percentage}
         text={minutes + ":" + seconds}
         styles={buildStyles({
-          textColor: "#808e9b",
+          textColor: mode === "work" ? red : green,
           pathColor: mode === "work" ? red : green,
-          tailColor: "transparent",
+          textSize: "1.5rem",
+          trailColor: "transparent",
         })}
       />
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-4 p-2 bg-white shadow-lg rounded-full w-40 border-zinc-500">
         {isPaused ? (
           <PlayButton
             onClick={() => {

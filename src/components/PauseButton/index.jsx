@@ -6,9 +6,9 @@ export default function PlayButton(props) {
     <>
       <button
         {...props}
-        className="p-2 bg-white rounded-full flex items-center justify-center cursor-pointer shadow-lg"
+        className="w-12 h-12 bg-white rounded-full flex items-center justify-center border-zinc-500 cursor-pointer shadow-lg hover:bg-zinc-50 hover:shadow-none transition duration-200 ease-in-out"
       >
-        <TimerPause size="32" color="#697689" />
+        <TimerPause size="24" color="#e74c3c" variant="Broken" />
       </button>
     </>
   );

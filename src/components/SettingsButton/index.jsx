@@ -1,14 +1,14 @@
 import React from "react";
-import { Setting4 } from "iconsax-react";
+import { Setting2 } from "iconsax-react";
 
 export default function SettingsButton(props) {
   return (
     <>
       <button
         {...props}
-        className="p-2 bg-white rounded-full flex items-center justify-center cursor-pointer shadow-lg"
+        className="w-12 h-12 bg-white rounded-full flex items-center border-zinc-500 justify-center cursor-pointer shadow-lg hover:bg-zinc-50 hover:shadow-none transition duration-200 ease-in-out"
       >
-        <Setting4 size="32" color="#697689" variant="Broken" />
+        <Setting2 size="24" color="#e74c3c" variant="Broken" />
       </button>
     </>
   );

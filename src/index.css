@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body,
+  html {
+    font-family: "Satoshi", sans-serif;
+    @apply antialiased h-full bg-white;
+  }
+
+  #root {
+    @apply flex items-center justify-center h-full;
+  }
+  main {
+    @apply max-w-sm w-full flex items-center justify-center flex-col p-4 md:p-0 gap-4;
+  }
+}

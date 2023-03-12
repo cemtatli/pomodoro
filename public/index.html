@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Freshman Pomodoro Clock Demo</title>
-    <link rel="stylesheet" href="./main.css" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pomodoro</title>
   </head>
   <body>
-    <main class="app">
-      <progress id="js-progress" value="0"></progress>
-      <!--       <div class="progress-bar"></div> -->
-      <div class="timer">
-        <div class="buttons mode-buttons" id="modeButtons">
-          <button data-mode="pomodoro" class="button active mode-button" id="js-pomodoro">
-            <img src="./icons/pomodoro-icon.svg" aria-hidden="true" />Pomodoro
-          </button>
-          <button data-mode="shortBreak" class="button mode-button" id="js-short-break">
-            <img src="./icons/short-break-icons.svg" aria-hidden="true" />Short break
-          </button>
-          <button data-mode="longBreak" class="button mode-button" id="js-long-break">
-            <img src="./icons/long-break-icon.svg" aria-hidden="true" />Long break
-          </button>
-        </div>
-        <div class="clock" id="js-clock"><span id="minutesVal">25</span> <span>:</span> <span id="secondsVal">00</span></div>
-        <button class="main-button" data-action="start" id="startButton">Start</button>
-      </div>
-    </main>
-    <div class="hidden">
-      <audio src="./assets/backtowork.mp3" data-sound="pomodoro"></audio>
-      <audio src="./assets/break.mp3" data-sound="shortBreak"></audio>
-      <audio src="./assets/break.mp3" data-sound="longBreak"></audio>
-    </div>
-    <script src="main.js"></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
   </body>
 </html>

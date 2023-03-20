@@ -1,9 +1,10 @@
-import React from "react";
-import ReactSlider from "react-slider";
+import React, { useContext } from "react";
+
 import SettingsContext from "../SettingsContext";
-import { useContext } from "react";
 import BackButton from "../BackButton";
 import UserButton from "../UserButton";
+
+import ReactSlider from "react-slider";
 
 export default function Settings() {
   const SettingsInfo = useContext(SettingsContext);

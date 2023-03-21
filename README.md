@@ -1,8 +1,8 @@
-# Pomodoro: Verimli Çalışma Yöntemi
+# ⌛ Pomodoro: Verimli Çalışma Yöntemi
 
 Pomodoro yöntemi, verimli çalışma yöntemlerinden biridir. Bu yöntem ile 25 dakika çalışıp 5 dakika dinlenerek verimli çalışma süresini arttırabilirsiniz.
 
- ## Kullanılan Teknolojiler
+ ## 🧰 Kullanılan Teknolojiler
   + [React](https://reactjs.org/)
   + [Tailwind CSS](https://tailwindcss.com/)
   + [React Icons](https://react-icons.github.io/react-icons/)
@@ -15,7 +15,7 @@ Pomodoro yöntemi, verimli çalışma yöntemlerinden biridir. Bu yöntem ile 25
 ## 📦 Kurulum
 Pomodoro'yu çalıştırmak için bilgisayarınızda Node.js ve Git kurulu olmalıdır.
 
-## 🚀 Nasıl kullanılır ?  
+## 🚀 Çalıştırmak İçin 
     
 ```bash
     # Projeyi klonla

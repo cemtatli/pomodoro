@@ -18,17 +18,17 @@ Pomodoro'yu çalıştırmak için bilgisayarınızda Node.js ve Git kurulu olmal
 ## 🚀 Çalıştırmak İçin 
     
 ```bash
-    # Projeyi klonla
-    git clone
+# Projeyi klonla
+git clone
 
-    # Proje dizinine gir
-    cd pomodoro
+# Proje dizinine gir
+cd pomodoro
 
-    # Bağımlılıkları yükle
-    npm install
+# Bağımlılıkları yükle
+npm install
 
-    # Projeyi çalıştır
-    npm run dev
+# Projeyi çalıştır
+npm run dev
 ```
 
 ## 📧 İletişim
